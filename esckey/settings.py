@@ -139,3 +139,21 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR /'media'
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
+
+
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.ERROR: "danger",
+
+}
+
+#SMTP configuration 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sergegavrilov01@gmail.com'
+DEFAULT_FROM_EMAIL = 'sergegavrilov01@gmail.com'
+SERVER_EMAIL = 'sergegavrilov01@gmail.com'
+EMAIL_HOST_PASSWORD = 'cdyv crjh hhll ksuc'
